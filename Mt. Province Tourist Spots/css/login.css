@@ -1,0 +1,182 @@
+/* =========================
+   RESET & GLOBAL
+========================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", "Segoe UI", sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #1d2671, #c33764);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* =========================
+   LOGIN CONTAINER
+========================= */
+.login-container {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+/* =========================
+   LOGIN BOX
+========================= */
+.login-box {
+    width: 100%;
+    max-width: 420px;
+    background: rgba(255, 255, 255, 0.96);
+    border-radius: 20px;
+    padding: 35px 30px;
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 0.8s ease;
+}
+
+/* Fade animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* =========================
+   HEADER
+========================= */
+.login-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.login-header h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #1d2671;
+}
+
+.login-header p {
+    margin-top: 8px;
+    color: #666;
+    font-size: 0.95rem;
+}
+
+/* =========================
+   FORM
+========================= */
+.login-form .form-group {
+    margin-bottom: 18px;
+}
+
+.login-form label {
+    display: block;
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: #444;
+}
+
+.login-form input {
+    width: 100%;
+    padding: 12px 14px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+}
+
+.login-form input:focus {
+    border-color: #c33764;
+    box-shadow: 0 0 0 3px rgba(195, 55, 100, 0.2);
+    outline: none;
+}
+
+/* =========================
+   OPTIONS
+========================= */
+.form-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 12px 0 22px;
+    font-size: 0.85rem;
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.forgot-link {
+    text-decoration: none;
+    color: #c33764;
+    font-weight: 600;
+}
+
+.forgot-link:hover {
+    text-decoration: underline;
+}
+
+/* =========================
+   BUTTON
+========================= */
+.btn-login {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 30px;
+    background: linear-gradient(135deg, #1d2671, #c33764);
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-login:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.25);
+}
+
+/* =========================
+   FOOTER
+========================= */
+.login-footer {
+    text-align: center;
+    margin-top: 25px;
+    font-size: 0.9rem;
+}
+
+.login-footer a {
+    color: #c33764;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.login-footer a:hover {
+    text-decoration: underline;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 480px) {
+    .login-box {
+        padding: 25px 20px;
+    }
+
+    .login-header h1 {
+        font-size: 1.6rem;
+    }
+}

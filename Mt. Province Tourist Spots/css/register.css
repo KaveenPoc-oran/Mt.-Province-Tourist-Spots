@@ -1,0 +1,182 @@
+/* =========================
+   RESET & GLOBAL
+========================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", "Segoe UI", sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #1d2671, #c33764);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* =========================
+   REGISTER CONTAINER
+========================= */
+.register-container {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+/* =========================
+   REGISTER BOX
+========================= */
+.register-box {
+    width: 100%;
+    max-width: 480px;
+    background: rgba(255, 255, 255, 0.97);
+    border-radius: 22px;
+    padding: 35px 30px;
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.35);
+    animation: slideUp 0.8s ease;
+}
+
+/* Animation */
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* =========================
+   HEADER
+========================= */
+.register-header {
+    text-align: center;
+    margin-bottom: 28px;
+}
+
+.register-header h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #1d2671;
+}
+
+.register-header p {
+    margin-top: 8px;
+    color: #666;
+    font-size: 0.95rem;
+}
+
+/* =========================
+   FORM
+========================= */
+.register-form .form-group {
+    margin-bottom: 16px;
+}
+
+.register-form label {
+    display: block;
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: #444;
+}
+
+.register-form input {
+    width: 100%;
+    padding: 12px 14px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+}
+
+.register-form input:focus {
+    border-color: #c33764;
+    box-shadow: 0 0 0 3px rgba(195, 55, 100, 0.2);
+    outline: none;
+}
+
+/* Password hint */
+.password-hint {
+    margin-top: 6px;
+    font-size: 0.75rem;
+    color: #888;
+}
+
+/* =========================
+   TERMS
+========================= */
+.terms-checkbox {
+    display: flex;
+    align-items: center;
+    gap: px; /* small space between checkbox and text */
+    margin: 18px 0 22px;
+    font-size: 0.85rem;
+}
+
+.terms-checkbox input[type="checkbox"] {
+    margin: 0;
+}
+
+.terms-checkbox label {
+    cursor: pointer;
+    white-space: nowrap; /* keep full sentence together */
+}
+
+/* =========================
+   BUTTON
+========================= */
+.btn-register {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 30px;
+    background: linear-gradient(135deg, #1d2671, #c33764);
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-register:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.28);
+}
+
+/* =========================
+   FOOTER
+========================= */
+.register-footer {
+    text-align: center;
+    margin-top: 24px;
+    font-size: 0.9rem;
+}
+
+.register-footer a {
+    color: #c33764;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.register-footer a:hover {
+    text-decoration: underline;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 480px) {
+    .register-box {
+        padding: 25px 20px;
+    }
+
+    .register-header h1 {
+        font-size: 1.6rem;
+    }
+}
